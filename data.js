@@ -1,7 +1,5 @@
 console.log('data is g');
 
-var life;
-var lifeStatement;
 var score;
 var $updateScore = function (x) {
   xString = Math.round(x).toString();
@@ -9,11 +7,12 @@ var $updateScore = function (x) {
 }
 
 //Sets the starting time when the game is opened.
-var startTime = new Date();
+var startTime = Number(simpleStorage.get('startTime'));
+console.log(startTime);
 //funciton to calculate time elapsed
 var elapsed = function (x) {
   var current = new Date();
-  var y = current.getTime() - x.getTime();
+  var y = current.getTime() - x;
   return y;
 };
 

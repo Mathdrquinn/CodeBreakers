@@ -210,6 +210,10 @@ console.log("k is " +k);
       $(this).css('display','none');
     });
 
+    if (simpleStorage.get('finalScore')) {
+      $('body').append('<p> Your high score is ' + simpleStorage.get('finalScore') + '!')
+    }
+
   Tick();
 
 //END OF READY

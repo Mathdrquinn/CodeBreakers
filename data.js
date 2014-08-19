@@ -18,15 +18,22 @@ var elapsed = function (x) {
 
 //Recursive function to calculate life
 function Tick() {
-    if (true)
+    if (stop === true)
     {
-      score = 1000000 - elapsed(startTime)
+      console.log(stop);
+      finalScore = 1000000 - elapsed(startTime);
+      console.log(finalScore);
+      simpleStorage.set('finalScore', finalScore.toString());
+    }
+    else if (true)
+    {
+      score = 1000000 - elapsed(startTime);
       $updateScore(score);
       setTimeout("Tick()", 10);
     }
     else
     {
-      totalScore = score;
+      console.log('probmlem');
     }
 }
 

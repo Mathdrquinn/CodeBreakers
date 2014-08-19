@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Play:700' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>Can you escape The Iron Yard?</title>
+</head>
+<body>
+<header>
+  <h1>Escape From The Iron Yard</h1>
+</header>
+
+<form id = "login" action="/Player Profile" method="post">
+
+  <fieldset>
+      <legend id = 'message'>Can You Escape?</legend> <br/>
+
+    <div class = "name">
+        <label for="name">Player's Name:</label>
+        <input type="text" id="username" />
+    </div>
+  <div class="levelGroup">
+    <p>Pick playing level:</p></br>
+      <input type="radio" name="level" id="radio1" value="easy" />
+      <label for="easy">Easy</label>
+    </p>
+    <p>
+      <input type="radio" name="level" id="radio2" value="medium" />
+      <label for="medium">Medium</label>
+    </p>
+    <p>
+      <input type="radio" name="level" id="radio3" value="hard" />
+      <label for="hard">Hard</label>
+    </p>
+
+    <div id="button">
+        <h3>Go!</h3>
+        </div>
+      </div>
+
+  <div id="image">
+    <img src="images/snips_up.png" width = "100px" alt="">
+  </div>
+  </fieldset>
+
+
+
+</form>
+
+
+<!-- Script tags for jquery and no underscore -->
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>

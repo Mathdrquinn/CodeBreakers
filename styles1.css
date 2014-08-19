@@ -107,16 +107,19 @@ body {
 footer {
   position: fixed;
   left: 1016px;
-  bottom: 0px;
-  height: 400px;
-  width: 245px;
-  border: 1px red solid; }
+  top: 0px;
+  height: 100%;
+  width: 245px; }
 
 #message {
   display: inline-block;
   width: 85%;
-  height: 170px;
-  border: 1px red solid; }
+  height: 225px;
+  margin: 12px; }
+
+#message span {
+  color: red;
+  font-size: 0.7em; }
 
 #inv {
   display: inline-block;
@@ -124,7 +127,6 @@ footer {
   height: 100px;
   background-color: gray;
   opacity: 0.5;
-  border: 1px red solid;
   padding-bottom: 100%; }
 
 progress {
@@ -147,15 +149,17 @@ progress {
 
 .key3 {
   display: none;
-  margin-left: 52%;
-  margin-top: -47px; }
+  position: absolute;
+  left: 530px;
+  width: 27px;
+  height: 50px; }
 
 #key1 {
   bottom: 27px;
   left: 44px; }
 
 #key2 {
-  top: 60px;
+  top: 73px;
   left: 100px;
   width: 27px;
   height: 50px; }

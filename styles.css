@@ -1,0 +1,83 @@
+body{
+background-image:url("images/walls.png");
+margin:0px;
+padding:0px;
+
+}
+form{
+border: 14px solid black;
+width:650px;
+border-radius:5%;
+margin:0 auto;
+margin-top: 150px;
+background-color:white;
+height:450px;
+
+}
+
+fieldset{
+  width:500px;
+  height:350px;
+  margin-bottom:20px;
+  font-family: 'Play', sans-serif;
+  font-size:20px;
+  position:relative;
+  margin: 25px auto;
+
+
+}
+
+legend{
+  font-size:28px;
+  color:red;
+
+}
+
+.levelGroup{
+position:relative;
+margin-left:150px;
+
+}
+
+.levelGroup label{
+  color:red;
+
+}
+
+input{
+  background-color:lightgray;
+}
+
+#button{
+  background-color:red;
+  text-align:center;
+  text-align: center;
+  color: white;
+  width: 100px;
+  margin-top:25px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+#button:hover {
+  background-color:gray;
+  color:red;
+}
+
+#image{
+  display:inline-block;
+}
+
+header{
+  background-color:red;
+  height:100px;
+  text-align:center;
+  margin-top:-25px;
+  box-shadow: 10px 5px 5px black;
+}
+
+h1{
+  font-family: 'Play', sans-serif;
+  color:white;
+  padding-top:25px;
+}

@@ -1,3 +1,4 @@
+var level = 0;
 $(document).ready(function(){
 
 $(".name").on("click", function (){
@@ -5,10 +6,15 @@ $(".name").on("click", function (){
 
 });
 
+$('.levelGroup').on('click', 'input', function(event) {
+  console.log('select');
+  level = $(this).val();
+  console.log(level);
+});
+
 $("#button").on("click",function (){
 
   var userName = $(this).closest('fieldset').children('.name').find('#username').text();
-  var level = $(this).closest('fieldset').children('.levelGroup').find('input').val();
 
   if (level === "easy" ){
     window.location.href = "scene1_easy.html";
